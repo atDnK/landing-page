@@ -43,6 +43,7 @@ body {
   
   /* navbar */
 nav {
+    top: 0;
     padding: 20px;
     background-color: #F8FFFA;
     position: sticky;
@@ -182,11 +183,67 @@ nav ul li a:hover {
     border-radius: 8px;
 } 
 
+/* data */
+.desc-data {
+    margin: 40px auto;
+}
+
+.desc-data h3 {
+    font-size: 24px;
+    color: #54BCA4;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.desc-data h2 {
+    color: #1A2C24;
+    font-size: 36px;
+    font-weight: 580;
+    text-align: center;
+}
+
+.data {
+    display: flex;
+}
+
+.data .box {
+    width: 220px;
+    height: 202px;
+    border-radius: 25px;
+    border: 4px solid #54BCA4;
+    text-align: center;
+    line-height: 202px;
+    margin: 50px 32px;
+}
+
+.data img {
+    margin: auto;
+    display: block;
+}
+
+.box-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.box p {
+    line-height: normal;
+}
+
+.data .value {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
 /* article */
 
 .title{
     text-align: center;
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 600;
     color: #1A2C24;
 }
@@ -246,6 +303,110 @@ nav ul li a:hover {
     margin-left: 200px;
 }
 
+/* form */
+.contact {
+    padding: 110px 59px;
+    background-color: #fff;
+    color: #475569;
+}
+
+.contact-container {
+    margin: 0px auto;
+    padding-top: 20px;
+}
+
+.desc-contact h2 {
+    color: #1A2C24;
+    font-size: 36px;
+    font-weight: 580;
+    text-align: center;
+}
+  
+.contact p {
+    margin: 16px 0;
+}
+
+.formMessage {
+    padding: 0px 120px;
+    color: #1A2C24;
+}
+
+.formMessage p {
+    text-align: center;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+  
+.form-group label {
+    font-weight: 500;
+}
+
+.formMessage input {
+    border: 1px solid #1e293b;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+}
+  
+.formMessage input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.formMessage textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+}
+
+.formMessage button {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.formMessage .btn {
+    text-decoration: none;
+    margin: 10px 0;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 24px;
+    font-weight: 500;
+    border-radius: 32px;
+    font-size: 16px;
+}
+
+.formMessage .btn-primary {
+    color: #fff;
+    background-color: #54BCA4;
+}
+
+.formMessage .btn-primary:hover {
+    background-color: #257461;
+    color: #fff;
+}
+
+.notif {
+    margin: 20px 120px;
+    margin-bottom: 0px;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+}
+  
+.notif-danger {
+    background-color: #d9534f;
+}
+
+.notif-success {
+    background-color: #5cb85c;
+}
+
 /* footer */
 footer {
     padding: 20px 70px;
@@ -300,8 +461,13 @@ hr {
     display: flex;
 }
 
+a {
+    display: flex;
+    padding: 0px 20px;
+}
+
 .term {
-    padding-left: 600px;
+    padding-left: 500px;
     display: flex;
     font-weight: 600;
 }

@@ -47,6 +47,42 @@
       </div>
       <hr />
     </section>
+    
+    <!-- Data -->
+    <section class="data">
+        <div class="container-fluid d-flex justify-content-space-between align-center">
+          <div class="desc-data">
+            <h3>Data Stunting</h3>
+            <h2>Balita di Indonesia</h2>
+            <div class="data">
+              <div class="box">
+                <div class="box-content">
+                  <img src="assets/img/data-1.png"/>
+                  <p class="value">24,4 %</p>
+                  <p class="value-desc">Stunting Balita</p>
+                  <p class="value-src">(SSGI, 2021)</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="box-content">
+                  <img src="assets/img/data-2.png"/>
+                  <p class="value">7,1 %</p>
+                  <p class="value-desc">Wasting Balita</p>
+                  <p class="value-src">(SSGI, 2021)</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="box-content">
+                  <img src="assets/img/data-3.png"/>
+                  <p class="value">17,7 %</p>
+                  <p class="value-desc">Underweight</p>
+                  <p class="value-src">(SSGI, 2021)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
 
     <!-- Article -->
     <section class="artikel">
@@ -98,6 +134,46 @@
       </div>
     </section>
 
+     <!-- form -->
+    <section class="contact" id="contact">
+        <div class="container-fluid d-flex justify-content-space-between align-center">
+          <div class="desc-contact">
+            <h2 class="text-center">Ingin konsultasi dengan kami?</h2>
+            <div class="contact-container">
+              <form class="formMessage" id="formMessage">
+                <p>Untuk konsultasi yang lebih lengkap anda dapat mengisi form di bawah ini</p>
+                <div class="form-group">
+                  <label for="name">Nama</label>
+                  <input type="text" id="name" name="name" />
+                </div>
+                <div class="form-group">
+                  <label for="city">Kota</label>
+                  <input type="text" id="city" name="city" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" />
+                </div>
+                <div class="form-group">
+                  <label for="zip-code">Zip Code</label>
+                  <input type="number" id="zip-code" name="zip-code" />
+                </div>
+                <div class="form-group">
+                  <label for="message">Pesan</label>
+                  <textarea name="message" id="message" cols="100%" rows="10"></textarea>
+                </div>
+                <div class="form-group d-flex">
+                  <input type="checkbox" id="status" name="status" />
+                  <label for="check" id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit-form">Kirim</button>
+              </form>
+              <div class="alert" id="warning"></div>
+            </div>
+          </div>
+        </div>
+    </section>
+
     <!-- footer -->
     <footer>
       <div class="container d-flex">
@@ -132,10 +208,12 @@
       <hr>
       <div class="footer-bot">
         <p>© 2023 <span class="bold">SIPENTING Teams</span> All rights reserved</p>
+        <a href="https://skilvul.com" id="link">Skilvul</a>
         <p class="term">Syarat & Ketentuan</p>
         <p class="term-2">Kebijakan Privasi</p>
       </div>
     </div>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
