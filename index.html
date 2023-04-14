@@ -35,7 +35,7 @@
       <div class="container-fluid d-flex justify-content-space-between align-center">
         <div class="desc">
           <h1 class="display-1">SIPENTING <span class="color-primary">Sistem Pencegahan Stunting</span></h1>
-          <p>
+          <p id="description">
             SIPENTING merupakan layanan konsultasi stunting, cek stunting dan edukasi yang bertujuan untuk pencegahan
             stunting pada masyakarat Indonesia.
           </p>
@@ -141,34 +141,15 @@
             <h2 class="text-center">Ingin konsultasi dengan kami?</h2>
             <div class="contact-container">
               <form class="formMessage" id="formMessage">
-                <p>Untuk konsultasi yang lebih lengkap anda dapat mengisi form di bawah ini</p>
-                <div class="form-group">
-                  <label for="name">Nama</label>
-                  <input type="text" id="name" name="name" />
-                </div>
-                <div class="form-group">
-                  <label for="city">Kota</label>
-                  <input type="text" id="city" name="city" />
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" />
-                </div>
-                <div class="form-group">
-                  <label for="zip-code">Zip Code</label>
-                  <input type="number" id="zip-code" name="zip-code" />
-                </div>
-                <div class="form-group">
-                  <label for="message">Pesan</label>
-                  <textarea name="message" id="message" cols="100%" rows="10"></textarea>
-                </div>
-                <div class="form-group d-flex">
-                  <input type="checkbox" id="status" name="status" />
-                  <label for="check" id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
-                </div>
-                <button type="submit" class="btn btn-primary" id="submit-form">Kirim</button>
+                <input id="name" type="text" placeholder="Nama">
+                <input id="city" type="text" placeholder="Kota">
+                <input id="email" type="email" placeholder="Email">
+                <input id="zip-code" type="number" placeholder="Zip-code">
+                <input id="status" type="checkbox">
+                <label id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
+                <button id="submit-form" type="submit" class="btn btn-primary">Submit</button>
+                <div class="alert" id="warning"></div>
               </form>
-              <div class="alert" id="warning"></div>
             </div>
           </div>
         </div>
@@ -207,8 +188,7 @@
       </div>
       <hr>
       <div class="footer-bot">
-        <p>© 2023 <span class="bold">SIPENTING Teams</span> All rights reserved</p>
-        <a href="https://skilvul.com" id="link">Skilvul</a>
+        <p>© 2023 <span class="bold">SIPENTING Teams</span> All rights reserved | <a href="https://skilvul.com" id="link">Skilvul</a></p>
         <p class="term">Syarat & Ketentuan</p>
         <p class="term-2">Kebijakan Privasi</p>
       </div>
